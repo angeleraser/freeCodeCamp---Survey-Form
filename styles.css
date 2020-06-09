@@ -1,0 +1,217 @@
+/* RESET  */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal
+}
+
+ul {
+  list-style: none
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0
+}
+
+html {
+  box-sizing: border-box
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%
+}
+
+iframe {
+  border: 0
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+td,
+th {
+  padding: 0
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: left
+}
+
+legend {
+  display: none;
+}
+
+body,
+html {
+  /* height: 100%; */
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+  max-width: 300px;
+}
+
+label {
+  font-size: 18px;
+}
+
+:root {
+  --color-white: #222;
+  --color-tinyWhite: #312b1eee;
+  --color-green: #37af65;
+}
+
+/* STYLES  */
+
+body {
+  background-image: url('https://images.pexels.com/photos/1749303/pexels-photo-1749303.jpeg?cs=srgb&dl=top-view-photo-of-coffee-near-tablet-1749303.jpg&fm=jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-content-wrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.main-header {
+  width: 100%;
+  color: #ffffff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.form-description {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-content-wrapper {
+  width: 100%;
+  background-color: var(--color-tinyWhite);
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.input-content {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-name {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.input {
+  border-style: none;
+  height: 45px;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  text-indent: 10px;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  color: wheat;
+}
+
+#dropdown {
+  color: #000;
+  font-size: 18px;
+}
+
+.input-radio,
+.input-checkbox {
+  transform: scale(1.5);
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submit-button {
+  border: none;
+  height: 60px;
+  font-size: 18px;
+  background-color: #37af65;
+  color: #ffffff;
+}
+
+.clue {
+  font-size: 16px;
+  font-style: italic;
+}
+.input-content:nth-child(5) label,.input-content:nth-child(6) label{
+  font-size: 14px;
+  font-weight: bold;
+  color: wheat;
+}
+.input-content:nth-child(5) .input-name,.input-content:nth-child(6) .input-name{
+  margin-bottom: 20px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="main-content-wrapper">
+    <!-- Title  -->
+    <header class="main-header">
+      <h1 class="form-title text-center" id="title">
+        Tell us about you
+      </h1>
+      <p class="form-description text-center" id="description">
+        Thank you for taking the time to help us with your skills
+      </p>
+    </header>
+    <!-- Form section  -->
+    <form class="form-content-wrapper" id="survey-form">
+      <!-- Name  -->
+      <div class="input-content">
+        <label id="name-label" for="name" class="input-name">
+          Name
+        </label>
+        <input class="input" type="text" required id="name" placeholder="Enter your name">
+      </div>
+      <!-- Email -->
+      <div class="input-content">
+        <label id="email-label" for="email" class="input-name">
+          Email
+        </label>
+        <input class="input" type="email" required id="email" placeholder="Enter your email">
+      </div>
+      <!-- Age  -->
+      <div class="input-content">
+        <label id="number-label" for="number" class="input-name">
+          Age
+        </label>
+        <input class="input" type="number" id="number" min="18" required max="99" placeholder="Age">
+      </div>
+      <!-- Role  -->
+      <div class="input-content">
+        <p class="input-name">Which option best describes your current role?</p>
+        <select name="role" class="input" required id="dropdown">
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <!-- recommend -->
+      <div class="input-content">
+        <p class="input-name">Would you recommend Us to a friend?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+      </div>
+      <!-- checkbox  -->
+      <div class="input-content">
+        <p class="input-name">
+          What would you like to see improved?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+        <label>
+          <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Front-end
+          Projects</label>
+        <label>
+          <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end
+          Projects</label>
+        <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Data
+          Visualization</label>
+        <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Challenges</label>
+        <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" />Open Source
+          Community</label>
+        <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Gitter help
+          rooms</label>
+        <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Videos</label>
+        <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />City Meetups</label>
+        <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" />Wiki</label>
+        <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Forum</label>
+        <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional
+          Courses</label>
+      </div>
+      <!-- Textarea  -->
+      <div class="input-content">
+        <p class="input-name">Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
+      <!-- Submit button  -->
+      <div class="input-content">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+    </form>
+  </div>
+</body>
+
+</html>
